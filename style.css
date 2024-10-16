@@ -1,1 +1,11 @@
-#map { height: 1000px; }
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#map { 
+  height: 100%;
+  width: 100%;
+}
