@@ -1,7 +1,1 @@
-body {
-    background-image: url(assets/map.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+#map { height: 1000px; }
