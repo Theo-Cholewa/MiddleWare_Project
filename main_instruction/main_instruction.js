@@ -24,7 +24,7 @@ class MainInstruction extends HTMLElement {
 
     setupLogic() {
         /* Vrai constructeur avec EventListener, ...*/
-        alert("Le composant est maintenant visible sur la page !");
+        //alert("Le composant est maintenant visible sur la page !");
     }
 }
 
