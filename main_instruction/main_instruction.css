@@ -1,5 +1,31 @@
 #main-instruction {
-    height: 100vh;
-    width: 100vw;
-    background: red;
+    width: 210px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(73, 205, 73);
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    row-gap: 5px;    
+}
+
+img {
+    grid-area: 1/1/3/2;
+}
+
+#data-distance, #data-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+#data-distance {
+    grid-area: 1/2;
+}
+#data-text {
+    grid-area: 2/2;
 }
