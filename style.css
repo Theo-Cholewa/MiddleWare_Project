@@ -14,6 +14,25 @@ body {
   width: 100vw;
 }
 
+#infos {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+
+#infos > input-adress {
+  justify-content: flex-start;
+  height: 100px;
+  width: 100px;  
+}
+
+#input {
+  z-index: 3; /* Assure-toi que cet élément est au-dessus des autres */
+  grid-area: 1/1;
+  pointer-events: auto; /* Assure que les événements de souris sont permis */
+  background-color: red;
+}
+
 #main-instruction {
   z-index: 2;
   grid-area: 3/5;
