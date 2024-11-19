@@ -73,15 +73,9 @@ class AutoCompleteAdress extends HTMLElement {
 
         // There are many ways to send data to the parent (or anyone listening); one of them is to use custom events, like so:
         p.addEventListener("click", function(){
-          let event = new CustomEvent("optionChosen", {
-            detail: {
-              name: context.name,
-              adress: pContent
-            }
-          })
-
-          document.dispatchEvent(event);
-
+          let input = context.shadowRoot.querySelector("input");
+          input.value = pContent.data;
+          while (list.firstChild) { list.removeChild(list.firstChild); }
         });
 
         list.appendChild(p);
