@@ -46,3 +46,15 @@ body {
 pop-up {
   z-index: 2;
 }
+
+#infos {
+  z-index: 2;
+  grid-row: 1/4;
+  grid-column: 6;
+  display: flex;
+  justify-content: flex-end;
+
+  help-component {
+    margin: 10px;
+  }
+}
