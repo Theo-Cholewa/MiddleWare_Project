@@ -27,9 +27,9 @@ body {
 }
 
 #input {
-  z-index: 3; /* Assure-toi que cet élément est au-dessus des autres */
+  z-index: 2; 
   grid-area: 1/1;
-  pointer-events: auto; /* Assure que les événements de souris sont permis */
+  pointer-events: auto; 
   background-color: red;
 }
 
@@ -41,4 +41,8 @@ body {
 #side-instruction {
   z-index: 2;
   grid-area: 2/1;
+}
+
+pop-up {
+  z-index: 2;
 }

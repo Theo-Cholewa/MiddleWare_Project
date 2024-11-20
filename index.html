@@ -15,6 +15,7 @@
         
     </head>
     <body>
+        
         <div id="map"></div>
         <script src="map/map.js"></script>
         <div id="infos">
@@ -30,9 +31,15 @@
         <div id="side-instruction">
             <side-instruction></side-instruction>
         </div>
-        <div id="popup">
-            <pop-up></pop-up>
-        </div>
+
+        <pop-up id="popup"></pop-up>
+        <script src="pop_up/pop_up.js" defer></script> <!-- Appeler la méthode addPopUp() après le chargement de pop_up.js --> 
+        <script> document.addEventListener('DOMContentLoaded', (event) => { 
+            let popUpInstance = document.getElementById('popup'); // Appeler addPopUp après que le shadow DOM soit chargé 
+            setTimeout(() => { popUpInstance.addPopUp('accident', 'Accident à 100m'); }, 2000); }); 
+        </script>
+        
+
         <goal></goal>
         <div id="main-instruction">
             <main-instruction></main-instruction>

@@ -24,7 +24,6 @@ class SideInstruction extends HTMLElement {
 
     setupLogic() {
         /* Vrai constructeur avec EventListener, ...*/
-        alert("Le composant side-instruction est maintenant visible sur la page !");
     }
 }
 
