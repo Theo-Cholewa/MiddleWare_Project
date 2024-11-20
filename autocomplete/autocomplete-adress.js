@@ -62,7 +62,7 @@ class AutoCompleteAdress extends HTMLElement {
     updateAutoCompleteList(adresses) {
       let context = this;
 
-      let list = this.shadowRoot.querySelector("div>ul");
+      let list = this.shadowRoot.querySelector("div");
       list.innerHTML = "";
 
       for(let adress of adresses) {
