@@ -37,14 +37,14 @@ class AutoCompleteAdress extends HTMLElement {
       this.callTimeout = 0;
 
       const input = this.shadowRoot.querySelector("input");
-      const div = this.shadowRoot.querySelector("div>ul");
 
-      input.addEventListener("keydown", function(e) {
+      input.addEventListener("keyup", function(e) {
         
         if (this.callTimeout) clearTimeout(this.callTimeout);
         
+        console.log("value : ", input.value);
         if(input.value.length< 3){
-          //console.log("input too short");
+          console.log("input too short");
           return;
         } 
         this.callTimeout = setTimeout(function(){
