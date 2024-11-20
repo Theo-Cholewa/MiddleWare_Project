@@ -1,6 +1,6 @@
 class Help extends HTMLElement {
 
-    active = true;
+    active = false;
     
     constructor() {
         super();
