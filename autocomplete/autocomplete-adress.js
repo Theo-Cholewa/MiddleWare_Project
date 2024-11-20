@@ -45,6 +45,8 @@ class AutoCompleteAdress extends HTMLElement {
         console.log("value : ", input.value);
         if(input.value.length< 3){
           console.log("input too short");
+          let list = context.shadowRoot.querySelector("div");
+          while (list.firstChild) { list.removeChild(list.firstChild); }
           return;
         } 
         this.callTimeout = setTimeout(function(){
