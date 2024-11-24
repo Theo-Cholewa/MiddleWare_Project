@@ -41,12 +41,21 @@
 
         <goal></goal>
         <div id="main-instruction">
-            <main-instruction></main-instruction>
+            <main-instruction id="mainInstruction"></main-instruction>
         </div>
+
         <script src="main_instruction/main_instruction.js"></script>
         <script src="side_instruction/side_instruction.js"></script>
         <script src="help/help.js"></script>
         <script src="map/map.js"></script>
         <script src="index.js"></script>
+
+        <script>
+            console.log("0");
+            document.addEventListener('DOMContentLoaded', (event) => { 
+            let m = document.getElementById('mainInstruction'); // Appeler addPopUp après que le shadow DOM soit chargé 
+            console.log("1");
+            setTimeout(() => { m.callTest(); console.log("2");}, 2000); }); 
+        </script>
     </body>
 </html>

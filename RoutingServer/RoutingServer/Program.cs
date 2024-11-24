@@ -9,7 +9,12 @@ namespace RoutingServer
 {
     class Program
     {
-
+        static void Main(string[] args)
+        {
+            //ServiceCalculator.MathsOperationsClient client = new ServiceCalculator.MathsOperationsClient();
+            //Console.WriteLine(client.Multiply(1, 2));
+            Console.ReadLine();
+        }
 
 
         // Partie Client

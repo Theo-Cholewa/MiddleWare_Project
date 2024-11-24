@@ -26,6 +26,19 @@ class MainInstruction extends HTMLElement {
         /* Vrai constructeur avec EventListener, ...*/
         //alert("Le composant est maintenant visible sur la page !");
     }
+
+    callTest(){
+        this.callTimeout = setTimeout(function(){
+            console.log("test call");
+            let url = `http://localhost:8733/Design_Time_Addresses/MathsLibrary/MathsOperations/Multiply?x=1&y=2`;
+            fetch(url).then(response => response.json().then(data => {
+              context.updateAutoCompleteList(data.features);
+            }))
+            .catch(error => {
+                console.error("Erreur lors de l'appel du service : ", error)
+            });
+        }, 1000);
+    }
 }
 
 customElements.define("main-instruction", MainInstruction);
