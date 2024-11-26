@@ -1,0 +1,26 @@
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.exe.config
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.pdb
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.csproj.AssemblyReference.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.csproj.CoreCompileInputs.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\Exec.exe.config
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\Exec.exe
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\Exec.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.csproj.AssemblyReference.cache
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.csproj.CoreCompileInputs.cache
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.exe
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Memory.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Text.Json.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Buffers.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.ValueTuple.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.csproj.SuggestedBindingRedirects.cache
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.exe.config
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\Exec\obj\Debug\Exec.csproj.Up2Date

@@ -20,9 +20,12 @@
         <div id="infos">
             <div class="fleche"></div>
             <div id="input">
-                Départ : <auto-complete-input slot="origin" name="start"></auto-complete-input> Arrivée : <auto-complete-input slot="destination" name="end"></auto-complete-input>
+                <origin-destination-input>
+                </origin-destination-input>
             </div>
-            <script src="autocomplete/autocomplete-adress.js" defer></script>
+
+            <script src="inputs/inputs.js" defer></script>
+            <!--<script src="autocomplete/autocomplete-adress.js" defer></script>-->
             <div id="help">
                 <help-component></help-component>
             </div>
