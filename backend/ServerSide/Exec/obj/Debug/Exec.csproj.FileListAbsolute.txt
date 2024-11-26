@@ -1,0 +1,7 @@
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.exe.config
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\bin\Debug\Exec.pdb
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.csproj.AssemblyReference.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.csproj.CoreCompileInputs.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\Exec\obj\Debug\Exec.pdb
