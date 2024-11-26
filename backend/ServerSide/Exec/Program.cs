@@ -10,8 +10,9 @@ namespace Exec
     {
         static void Main(string[] args)
         {
+            /*
             Router.RoutingServerClient client = new Router.RoutingServerClient();
-            Console.WriteLine(client.GetPath("a", "b"));
+            Console.WriteLine(client.GetPath("a", "b"));*/
             Console.ReadLine();
         }
     }

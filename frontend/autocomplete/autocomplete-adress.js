@@ -83,6 +83,10 @@ class AutoCompleteAdress extends HTMLElement {
         list.appendChild(p);
       }
     }
+
+    get inputValue() { 
+      return this.shadowRoot.querySelector('#childInput').value; 
+    }
   }
 
 customElements.define("auto-complete-input", AutoCompleteAdress);
