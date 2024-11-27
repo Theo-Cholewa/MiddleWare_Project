@@ -5,3 +5,10 @@ C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare
 C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\ServerSide\obj\Debug\ServerSide.csproj.CoreCompileInputs.cache
 C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\ServerSide\obj\Debug\ServerSide.dll
 C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\ServerSide\ServerSide\obj\Debug\ServerSide.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.csproj.AssemblyReference.cache
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.csproj.CoreCompileInputs.cache
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.exe.config
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.exe
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.exe
