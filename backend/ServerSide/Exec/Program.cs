@@ -24,17 +24,13 @@ namespace ClientSide
             HttpResponseMessage response = await client.GetAsync("https://api.jcdecaux.com/vls/v1/stations?contract=" + city + "&apiKey=da2a1717115e9e7a90149fd7d0c4afcff086e014");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
-            var options = new JsonSerializerOptions { 
-                PropertyNameCaseInsensitive = true, }; 
-            List<Place> places = JsonSerializer.Deserialize<List<Place>>(responseBody, options);
-            Console.WriteLine(places.Count);
-            Console.WriteLine(places.Last().ToString());
+            List<Place> places = JsonSerializer.Deserialize<List<Place>>(responseBody);
             return places;
         }
 
         public Place GetNearestPlace(List<Place> places, Position coord)
         {
-            GeoCoordinate geoCoordinate = new GeoCoordinate(coord.latitude, coord.longitude);
+            GeoCoordinate geoCoordinate = new GeoCoordinate(coord.lat, coord.lng);
             Place best = null;
             foreach(var place in places)
             {
@@ -42,8 +38,8 @@ namespace ClientSide
                 {
                     best = place;
                 }
-                GeoCoordinate geoCoordinateOther = new GeoCoordinate(place.position.latitude, place.position.longitude);
-                GeoCoordinate geoCoordinateBest = new GeoCoordinate(best.position.latitude, best.position.longitude);
+                GeoCoordinate geoCoordinateOther = new GeoCoordinate(place.position.lat, place.position.lng);
+                GeoCoordinate geoCoordinateBest = new GeoCoordinate(best.position.lat, best.position.lng);
                 double distance = geoCoordinate.GetDistanceTo(geoCoordinateOther);
                 double distanceBest = geoCoordinate.GetDistanceTo(geoCoordinateBest);
                 if(distance < distanceBest)
@@ -76,6 +72,20 @@ namespace ClientSide
             return res;
         }
 
+        public async Task<Position> AddressToPosition(string address)
+        {
+            HttpClient client = new HttpClient(); 
+            HttpResponseMessage response = await client.GetAsync("https://api-adresse.data.gouv.fr/search/?q=" + address.Replace(" ", "+")); 
+            response.EnsureSuccessStatusCode(); 
+            string responseBody = await response.Content.ReadAsStringAsync(); 
+            var position = new Position();
+            var jsonResponse = JsonDocument.Parse(responseBody); 
+            foreach (var feature in jsonResponse.RootElement.GetProperty("features").EnumerateArray()) { 
+                var coordinates = feature.GetProperty("geometry").GetProperty("coordinates").EnumerateArray(); 
+                position = new Position { lng = coordinates.First().GetDouble(), lat = coordinates.Last().GetDouble() };
+            }
+            return position;
+        }
         public async Task<List<Position>> GetKeyPoints(string start, string end)
         {
             List<Position> points = new List<Position>();
@@ -84,38 +94,21 @@ namespace ClientSide
             string cityB = GetCity(end);
 
             List<Place> placesA = RetreveContract(cityA).Result;
-            //Console.WriteLine(placesA[0].ToString());
             List<Place> placesB = RetreveContract(cityB).Result;
-            //Console.WriteLine(placesB.Count);
+
+            Position startPosition = await AddressToPosition(start);
+            Position endPosition = await AddressToPosition(end);
+
+            points.Add(startPosition);
+            points.Add(endPosition);
+
             if (placesA.Count != 0 && placesB.Count != 0)
             {
-                Place startStation = GetNearestPlace(placesA, placesA[0].position);
-                Place endStation = GetNearestPlace(placesB, placesB[0].position);
-                
-                Console.WriteLine(startStation.name);
-                Console.WriteLine(startStation.position);
-                Console.WriteLine(endStation.name);
-                Console.WriteLine(endStation.position);
+                Place startStation = GetNearestPlace(placesA, startPosition);
+                Place endStation = GetNearestPlace(placesB, endPosition);
                 points.Add(startStation.position);
                 points.Add(endStation.position);
             }
-
-            HttpClient client = new HttpClient();
-            string positionStart = start.Split(',')[0].Replace(' ', '+');
-            HttpResponseMessage responsePositionStart = await client.GetAsync("https://api-adresse.data.gouv.fr/search/?q=" + positionStart);
-            responsePositionStart.EnsureSuccessStatusCode();
-            string responsePositionStartBody = await responsePositionStart.Content.ReadAsStringAsync();
-            Position positionStartLeVrai = JsonSerializer.Deserialize<Position>(responsePositionStartBody);
-
-            string positionEnd = start.Split(',')[0].Replace(' ', '+');
-            HttpResponseMessage responsePositionEnd = await client.GetAsync("https://api-adresse.data.gouv.fr/search/?q=" + positionEnd);
-            responsePositionEnd.EnsureSuccessStatusCode();
-            string responsePositionEndBody = await responsePositionEnd.Content.ReadAsStringAsync();
-            Position positionEndLeVrai = JsonSerializer.Deserialize<Position>(responsePositionEndBody);
-
-            points.Add(positionStartLeVrai);
-            points.Add(positionEndLeVrai);
-
             return points;
         }
 
@@ -135,10 +128,10 @@ namespace ClientSide
 
     public class Position
     {
-        public double latitude { get; set; }
-        public double longitude { get; set; }
+        public double lat { get; set; }
+        public double lng { get; set; }
 
-        public override string ToString() { return $"Latitude: {latitude}, Longitude: {longitude}"; }
+        public override string ToString() { return $"Latitude: {lat}, Longitude: {lng}"; }
     }
     public class Place
     {
