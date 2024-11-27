@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Exec\\Program.cs",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
               "RelativeToolTip": "Exec\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAswCAAAAAJAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAcwDQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T09:24:29.526Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "ServerSide\\RoutingServer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T09:18:13.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T09:18:13.482Z"
             },
             {
               "$type": "Document",
