@@ -3,35 +3,61 @@
   "WorkspaceRootPath": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\Exec.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\Exec.csproj|solutionrelative:exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\ClientSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\ClientSide.csproj|solutionrelative:exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\soapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|solutionrelative:serversoap\\soapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ServerSide||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\corsmessageinspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\corsmessageinspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\corsbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\corsbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|solutionrelative:serversoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RouterServer||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\corsbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\corsbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\corsmessageinspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\corsmessageinspector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|solutionrelative:serversoap\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\ServerSoap.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\isoapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\ServerSoap.csproj|solutionrelative:serversoap\\isoapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Proxy||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\Exec.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE90949A-4338-4E64-918A-6B65230FECF4}|Exec\\Exec.csproj|solutionrelative:exec\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
@@ -44,28 +70,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CorsMessageInspector.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\CorsMessageInspector.cs",
-              "RelativeDocumentMoniker": "ServerSide\\CorsMessageInspector.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\CorsMessageInspector.cs",
-              "RelativeToolTip": "ServerSide\\CorsMessageInspector.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:33:01.315Z",
+              "DocumentIndex": 6,
+              "Title": "RouterServer",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RouterServer.csproj",
+              "RelativeDocumentMoniker": "ServerSide\\RouterServer.csproj",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RouterServer.csproj",
+              "RelativeToolTip": "ServerSide\\RouterServer.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-28T09:31:24.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CorsBehavior.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\CorsBehavior.cs",
               "RelativeDocumentMoniker": "ServerSide\\CorsBehavior.cs",
@@ -73,85 +102,162 @@
               "RelativeToolTip": "ServerSide\\CorsBehavior.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:32:57.931Z",
+              "WhenOpened": "2024-11-28T09:31:10.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServerSide",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\ServerSide.csproj",
-              "RelativeDocumentMoniker": "ServerSide\\ServerSide.csproj",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\ServerSide.csproj",
-              "RelativeToolTip": "ServerSide\\ServerSide.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-27T15:05:22.05Z",
+              "DocumentIndex": 9,
+              "Title": "CorsMessageInspector.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\CorsMessageInspector.cs",
+              "RelativeDocumentMoniker": "ServerSide\\CorsMessageInspector.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\CorsMessageInspector.cs",
+              "RelativeToolTip": "ServerSide\\CorsMessageInspector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:31:07.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Program.cs",
+              "RelativeDocumentMoniker": "ServerSoap\\Program.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Program.cs",
+              "RelativeToolTip": "ServerSoap\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:17:44.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
+              "RelativeDocumentMoniker": "Exec\\Program.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
+              "RelativeToolTip": "Exec\\Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowFIAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:00:11.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SoapServer.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\SoapServer.cs",
+              "RelativeDocumentMoniker": "ServerSoap\\SoapServer.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\SoapServer.cs",
+              "RelativeToolTip": "ServerSoap\\SoapServer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:15:40.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\App.config",
+              "RelativeDocumentMoniker": "ServerSoap\\App.config",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\App.config",
+              "RelativeToolTip": "ServerSoap\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-28T09:15:33.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
               "RelativeDocumentMoniker": "ServerSide\\Program.cs",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
               "RelativeToolTip": "ServerSide\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T14:54:16.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
-              "RelativeDocumentMoniker": "Exec\\Program.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
-              "RelativeToolTip": "Exec\\Program.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowFIAAABUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T09:24:29.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
               "RelativeDocumentMoniker": "ServerSide\\App.config",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
               "RelativeToolTip": "ServerSide\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-26T09:21:08.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "IRoutingServer.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\IRoutingServer.cs",
+              "RelativeDocumentMoniker": "ServerSide\\IRoutingServer.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\IRoutingServer.cs",
+              "RelativeToolTip": "ServerSide\\IRoutingServer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:18:04.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISoapServer.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\ISoapServer.cs",
+              "RelativeDocumentMoniker": "ServerSoap\\ISoapServer.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\ISoapServer.cs",
+              "RelativeToolTip": "ServerSoap\\ISoapServer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:12:44.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Proxy",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Proxy.csproj",
+              "RelativeDocumentMoniker": "ServerSoap\\Proxy.csproj",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Proxy.csproj",
+              "RelativeToolTip": "ServerSoap\\Proxy.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-28T09:17:12.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RoutingServer.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
               "RelativeDocumentMoniker": "ServerSide\\RoutingServer.cs",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
               "RelativeToolTip": "ServerSide\\RoutingServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T09:18:13.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IRoutingServer.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\IRoutingServer.cs",
-              "RelativeDocumentMoniker": "ServerSide\\IRoutingServer.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\IRoutingServer.cs",
-              "RelativeToolTip": "ServerSide\\IRoutingServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
+              "RelativeDocumentMoniker": "Exec\\Program.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\Exec\\Program.cs",
+              "RelativeToolTip": "Exec\\Program.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAowFIAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T09:18:04.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T09:24:29.526Z"
             }
           ]
         }

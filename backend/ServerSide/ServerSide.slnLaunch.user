@@ -3,11 +3,11 @@
     "Name": "Nouveau profil",
     "Projects": [
       {
-        "Path": "ServerSide\\ServerSide.csproj",
+        "Path": "ServerSide\\RouterServer.csproj",
         "Action": "Start"
       },
       {
-        "Path": "Exec\\Exec.csproj",
+        "Path": "Exec\\ClientSide.csproj",
         "Action": "Start"
       }
     ]
