@@ -1,6 +1,9 @@
 <template id="inputs">
     <link rel="stylesheet" href="/inputs/inputs.css">
-    Départ : <auto-complete-input id="start" slot="origin" name="start"></auto-complete-input> Arrivée : <auto-complete-input id="end" slot="destination" name="end"></auto-complete-input>
+    <div id="logic">
+        <div id="begin">Départ :<auto-complete-input id="start" slot="origin" name="start"></auto-complete-input></div>
+        <div id="arrive">Arrivée :<auto-complete-input id="end" slot="destination" name="end"></auto-complete-input></div>
+        <button id="submit">Calculer l'itinéraire</button>
+    </div>
     <script src="/autocomplete/autocomplete-adress.js" defer></script>
-    <button id="submit">Calculer l'itinéraire</button>
 </template>

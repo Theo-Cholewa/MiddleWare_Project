@@ -4,6 +4,7 @@ class PopUp extends HTMLElement {
         super();
     
         let shadowRoot = this.attachShadow({mode: "open"});
+        this.shadowRootInstance = shadowRoot;
 
         fetch("/pop_up/pop_up.html")
             .then(response => {
@@ -25,8 +26,7 @@ class PopUp extends HTMLElement {
     setupLogic() {
         /* Vrai constructeur avec EventListener, ...*/
     }
-    // type = accident 
-    // message = "accident à 100m"
+
     addPopUp(type, message) {
         let context = this;
         
