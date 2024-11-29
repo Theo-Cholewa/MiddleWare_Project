@@ -114,6 +114,7 @@ namespace ClientSide
 
         static async Task Main()
         {
+            /*
             string start = "2 Rue Maurice Caunes, 31200 Toulouse";
             string end = "Centre Commercial, Mirail FR, MIRAIL, 31100 Toulouse";
 
@@ -121,7 +122,7 @@ namespace ClientSide
 
             Task<List<Position>> positionTask = program.GetKeyPoints(start, end); 
             List<Position> positions = await positionTask; 
-            foreach (var position in positions) { Console.WriteLine(position); }
+            foreach (var position in positions) { Console.WriteLine(position); }*/
             Console.ReadLine();
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,14 +12,16 @@ namespace ServerSide
     {
         static void Main(string[] args)
         {
-            ServiceHost host = new ServiceHost(typeof(RoutingServer));
-            var binding = new WebHttpBinding();
-            var endpoint = host.AddServiceEndpoint(typeof(IRoutingServer), binding, "http://localhost:8733/Design_Time_Addresses/ServerSide/Service1/");
-            endpoint.EndpointBehaviors.Add(new CorsBehavior());
+            Uri baseAddress = new Uri("http://localhost:8734/Design_Time_Addresses/ServerSide/Service1/");
+            ServiceHost host = new ServiceHost(typeof(RoutingServer), baseAddress);
+
+            host.AddServiceEndpoint(typeof(IRoutingServer), new WebHttpBinding(), "").Behaviors.Add(new WebHttpBehavior());
 
             host.Open();
-            Console.WriteLine("Service is running");
+            Console.WriteLine("RoutingServer is host at " + baseAddress);
+            Console.WriteLine("Host is running... Press <Enter> key to stop");
             Console.ReadLine();
+            host.Close();
         }
     }
 }
