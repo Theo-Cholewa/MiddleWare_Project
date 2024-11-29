@@ -4,6 +4,7 @@ class PopUp extends HTMLElement {
         super();
     
         let shadowRoot = this.attachShadow({mode: "open"});
+        this.shadowRootInstance = shadowRoot;
 
         fetch("/pop_up/pop_up.html")
             .then(response => {
@@ -24,19 +25,11 @@ class PopUp extends HTMLElement {
 
     setupLogic() {
         /* Vrai constructeur avec EventListener, ...*/
-    }
-    // type = accident 
-    // message = "accident à 100m"
-    addPopUp(type, message) {
-        let context = this;
-        
-        let list = this.shadowRoot.querySelector("div");
-  
-        let p = document.createElement("p");
-        p.innerHTML = message;
-        p.classList.add('pop-up');
-        list.appendChild(p);
-        console.log("pop-up added");
+        const dataImg = this.shadowRootInstance.querySelector("#data-img");
+        const dataText = this.shadowRootInstance.querySelector("#data-text");
+
+        dataImg.src = "../assets/arrows/turn_right.png";
+        dataText.textContent = "1km - Accident";
     }
 }
 

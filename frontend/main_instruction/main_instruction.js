@@ -4,6 +4,7 @@ class MainInstruction extends HTMLElement {
         super();
 
         let shadowRoot = this.attachShadow({mode: "open"});
+        this.shadowRootInstance = shadowRoot;
 
         fetch("/main_instruction/main_instruction.html")
             .then(response => {
@@ -23,8 +24,13 @@ class MainInstruction extends HTMLElement {
     }
 
     setupLogic() {
-        /* Vrai constructeur avec EventListener, ...*/
-        //alert("Le composant est maintenant visible sur la page !");
+        const dataImg = this.shadowRootInstance.querySelector("#data-img");
+        const dataDistance = this.shadowRootInstance.querySelector("#data-distance");
+        const dataText = this.shadowRootInstance.querySelector("#data-text");
+
+        dataImg.src = "../assets/arrows/turn_right.png";
+        dataDistance.textContent = "500m";
+        dataText.textContent = "Tournez à droite";
     }
 }
 
