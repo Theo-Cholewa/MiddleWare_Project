@@ -32,16 +32,17 @@
             <side-instruction></side-instruction>
         </div>
 
-        <div id="pop-ups">
-            <pop-up></pop-up>
-            <pop-up></pop-up>
-        </div>
+        <pop-up id="popup"></pop-up>
+        <script src="pop_up/pop_up.js" defer></script> <!-- Appeler la méthode addPopUp() après le chargement de pop_up.js --> 
+        <script> document.addEventListener('DOMContentLoaded', (event) => { 
+            let popUpInstance = document.getElementById('popup'); // Appeler addPopUp après que le shadow DOM soit chargé 
+            setTimeout(() => { popUpInstance.addPopUp('accident', 'Accident à 100m'); }, 2000); }); 
+        </script>
 
         <goal-component></goal-component>
         <main-instruction></main-instruction>
         
         <script src="inputs/inputs.js"></script>
-        <script src="pop_up/pop_up.js"></script>
         <script src="goal/goal.js"></script>
         <script src="main_instruction/main_instruction.js"></script>
         <script src="side_instruction/side_instruction.js"></script>

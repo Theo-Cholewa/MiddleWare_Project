@@ -37,7 +37,7 @@ main-instruction {
   row-gap: 10px;
 }
 
-#pop-ups {
+#popup {
   position: absolute;
   z-index: 2;
   width: auto;
