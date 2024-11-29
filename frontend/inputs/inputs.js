@@ -23,6 +23,15 @@ class OriginDestinationInput extends HTMLElement {
                     console.log(`Origin: ${originValue}`);
                     console.log(`Destination: ${destinationValue}`);
 
+                    const event = new CustomEvent('origin-destination-changed', {
+                        detail: {
+                            origin: originValue,
+                            destination: destinationValue
+                        }
+                    });
+                    // Émettez l'événement
+                    window.dispatchEvent(event);
+
                     fetch(`http://localhost:8733/Design_Time_Addresses/ServerSide/Service1/path?start=${originValue}&end=${destinationValue}`).then(
                         response => response.json().then(data => {
                             console.log(data);

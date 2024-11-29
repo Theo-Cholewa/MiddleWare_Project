@@ -42,7 +42,7 @@ map.on('click', function(e) {
           }
 
           if (startInputField.value && endInputField.value) {
-            getRoute(startInputField.value, endInputField.value);
+            draw(startInputField.value, endInputField.value);
           }
         }
         else {
@@ -55,45 +55,97 @@ map.on('click', function(e) {
   }
 });
 
+function draw(startAddress, endAddress) {
+  let lngStart, latStart, lngEnd, latEnd;
+  Promise.all([
+    getCoordinates(startAddress),
+    getCoordinates(endAddress)
+  ])
+  .then(([startCoord, endCoord]) => {
+    lngStart = startCoord.longitude;
+    latStart = startCoord.latitude;
+    lngEnd = endCoord.longitude;
+    latEnd = endCoord.latitude;
+
+    console.log("Start, longitude: " + lngStart + ", latitude: " + latStart);
+    console.log("End, longitude: " + lngEnd + ", latitude: " + latEnd);
+
+    getRoute(lngStart, latStart, lngEnd, latEnd);
+  })
+  .catch(error => {
+    console.error("Error fetching coordinates:", error);
+  })
+}
+
+// Fonction qui prend une adresse et retourne une promesse avec la latitude et la longitude
+function getCoordinates(address) {
+  return new Promise((resolve, reject) => {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`;
+
+    // Effectuer une requête HTTP GET vers l'API Nominatim
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          reject('Erreur lors de la récupération des données.');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.length > 0) {
+          // On récupère les coordonnées du premier résultat
+          const lat = data[0].lat;
+          const lon = data[0].lon;
+          resolve({ latitude: lat, longitude: lon });
+        } else {
+          reject('Aucun résultat trouvé pour cette adresse.');
+        }
+      })
+      .catch(error => {
+        reject('Erreur de connexion: ' + error);
+      });
+  });
+}
 
 
 function getRoute(startLng, startLat, endLng, endLat) {
-  console.log("Call GetRoute");
+  const apiKey = "5b3ce3597851110001cf624890fd5d77ab2949f7b0b6d7b9ba15d1df";
+  const url = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${startLng},${startLat}&end=${endLng},${endLat}`;
 
-  coordinates = startLng.ToString(CultureInfo.InvariantCulture) + "," + startLat.ToString(CultureInfo.InvariantCulture) + ";" + endLng.ToString(CultureInfo.InvariantCulture) + "," + endLat.ToString(CultureInfo.InvariantCulture);
-  const url = "http://router.project-osrm.org/route/v1/driving/" + coordinates + "?overview=full&steps=true";
+  clearMap()
 
   fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      if (data.routes && data.routes.length > 0) {
-        const route = data.routes[0];
-        console.log("Distance : " + route.distance + " mètres");
-        console.log("Durée : " + route.duration + " secondes");
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.features) {
+                const coords = data.features[0].geometry.coordinates;
 
-        // Récupérer les coordonnées du trajet
-        const routeCoordinates = routes.geometry.coordinates;
+                // Convertir les coordonnées GeoJSON en Leaflet (LatLng)
+                const latLngs = coords.map(coord => [coord[1], coord[0]]);
 
-        // Dessiner la polyline sur la carte
-        drawRoute(routeCoordinates);
-      } else {
-        console.error("Aucune route trouvée");
-      }
-    })
-    .catch(error => {
-      console.error("Erreur lors de la récupération du trajet: ", error);
-    })
+                // Ajouter une polyligne à la carte
+                const routeLine = L.polyline(latLngs, { color: 'blue', weight: 4 }).addTo(map);
+
+                // Ajuster la vue pour inclure le trajet
+                map.fitBounds(routeLine.getBounds());
+            } else {
+                console.error("Aucun itinéraire trouvé.");
+            }
+        })
+        .catch(error => console.error("Erreur lors de la récupération de l'itinéraire :", error));
 }
 
-function drawRoute(coordinates) {
-  // Supprimer les anciennes polylines si nécessaire
-  if (window.routePolyline) {
-    map.removeLayer(window.routePolyline);
-  }
-
-  // Dessiner la nouvelle polyline
-  window.routePolyline = L.polyline(coordinates.map(coord => [coord[1], coord[0]]), { color: 'blue' }).addTo(map);
-
-  // Ajuster la vue sur la carte pour afficher toute la route
-  map.fitBounds(window.routePolyline.getBounds());
+function clearMap() {
+  map.eachLayer(function(layer) {
+    if (layer instanceof L.Polyline) {
+      map.removeLayer(layer);
+    }
+  });
 }
+
+window.addEventListener('origin-destination-changed', function(event) {
+  const { origin, destination } = event.detail;
+  console.log(`Received origin: ${origin}, destination: ${destination}`);
+
+  // Appelez la fonction draw avec les paramètres appropriés
+  draw(origin, destination);
+});
