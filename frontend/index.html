@@ -17,20 +17,18 @@
     <body>
         
         <div id="map"></div>
-        <div id="infos">
-            <div class="fleche"></div>
-            <div id="input">
-                <origin-destination-input id="start-input">
-                </origin-destination-input>
-            </div>
+        <script src="map/map.js"></script>
 
-            <script src="inputs/inputs.js" defer></script>
-            <!--<script src="autocomplete/autocomplete-adress.js" defer></script>-->
-            <div id="help">
-                <help-component></help-component>
-            </div>
+        <div class="fleche"></div>
+        <div id="input">
+            <origin-destination-input>
+            </origin-destination-input>
         </div>
-        <div id="side-instruction">
+
+        <help-component></help-component>
+
+        <div id="side-instructions">
+            <side-instruction></side-instruction>
             <side-instruction></side-instruction>
         </div>
 
@@ -40,16 +38,15 @@
             let popUpInstance = document.getElementById('popup'); // Appeler addPopUp après que le shadow DOM soit chargé 
             setTimeout(() => { popUpInstance.addPopUp('accident', 'Accident à 100m'); }, 2000); }); 
         </script>
-        
 
-        <goal></goal>
-        <div id="main-instruction">
-            <main-instruction></main-instruction>
-        </div>
+        <goal-component></goal-component>
+        <main-instruction></main-instruction>
+        
+        <script src="inputs/inputs.js"></script>
+        <script src="goal/goal.js"></script>
         <script src="main_instruction/main_instruction.js"></script>
         <script src="side_instruction/side_instruction.js"></script>
         <script src="help/help.js"></script>
-        <script src="map/map.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

@@ -4,6 +4,7 @@ class Goal extends HTMLElement {
         super();
     
         let shadowRoot = this.attachShadow({mode: "open"});
+        this.shadowRootInstance = shadowRoot;
 
         fetch("/goal/goal.html")
             .then(response => {
@@ -23,7 +24,9 @@ class Goal extends HTMLElement {
     }
 
     setupLogic() {
-        /* Vrai constructeur avec EventListener, ...*/
+        const data = this.shadowRootInstance.querySelector("#goal");
+
+        data.textContent = "10km - 15 min";
     }
 }
 

@@ -32,7 +32,7 @@ class OriginDestinationInput extends HTMLElement {
                     // Émettez l'événement
                     window.dispatchEvent(event);
 
-                    fetch(`http://localhost:8733/Design_Time_Addresses/ServerSide/Service1/path?start=${originValue}&end=${destinationValue}`).then(
+                    fetch(`http://localhost:8734/Design_Time_Addresses/ServerSide/Service1/path?start=${originValue}&end=${destinationValue}`).then( 
                         response => response.json().then(data => {
                             console.log(data);
                         })
