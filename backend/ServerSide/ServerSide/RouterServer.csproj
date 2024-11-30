@@ -52,6 +52,11 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ProxyCache\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Connected Services\ClientProxy\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -69,12 +74,26 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Connected Services\ClientProxy\SoapServer.wsdl" />
+    <None Include="Connected Services\ProxyCache\ProxyCache.wsdl" />
+    <None Include="Connected Services\ProxyCache\ServerSide.ProxyCache.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ProxyCache\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyCache\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ProxyCache\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ClientProxy\" />
+    <WCFMetadataStorage Include="Connected Services\ProxyCache\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ClientProxy\configuration91.svcinfo" />
@@ -84,6 +103,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ClientProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ProxyCache\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ProxyCache\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ProxyCache\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
