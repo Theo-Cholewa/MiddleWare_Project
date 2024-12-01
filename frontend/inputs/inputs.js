@@ -30,8 +30,8 @@ class OriginDestinationInput extends HTMLElement {
                     
                     console.log(`Origin: ${originValue}`);
                     console.log(`Destination: ${destinationValue}`);
-
-                    fetch(`http://localhost:8734/Design_Time_Addresses/ServerSide/Service1/path?start=${originValue}&end=${destinationValue}`).then( 
+                    // http://localhost:8734/Design_Time_Addresses/ServerSide/Service1/ 
+                    fetch(`http://localhost:8734/RoutingServer/path?start=${originValue}&end=${destinationValue}`).then( 
                         response => response.json().then(data => {
                             console.log(data);
                         }));
