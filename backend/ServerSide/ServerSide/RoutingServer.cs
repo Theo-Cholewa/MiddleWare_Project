@@ -1,4 +1,5 @@
 ﻿using ServerSide.ClientProxy;
+using ServerSide.ProxyCache;
 using System;
 using System.Collections.Generic;
 using System.Device.Location;
@@ -128,6 +129,9 @@ namespace ServerSide
         
         public async Task<string> CallTest(string city)
         {
+            ProxyCacheClient proxyCacheClient = new ProxyCacheClient();
+            Console.WriteLine("test proxy : " + proxyCacheClient.GetContracts(city));
+
             // c'est le proxy qui le fait normalement
             var headers = WebOperationContext.Current.OutgoingResponse.Headers;
             headers.Remove("Access-Control-Allow-Origin"); // Remove any existing values

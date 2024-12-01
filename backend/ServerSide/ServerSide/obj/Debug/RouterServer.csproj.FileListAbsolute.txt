@@ -17,3 +17,4 @@ C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSid
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\RouterSe.8733DD71.Up2Date
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.exe
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.pdb
+C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientSide", "Exec\ClientSi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "ServerSoap\Proxy.csproj", "{FCB747E1-F645-4B9E-8585-7CCD09355441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyCache", "ProxyCache\ProxyCache.csproj", "{C1CBDAFA-8FA2-4A71-A0A6-36F3D3F87D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{FCB747E1-F645-4B9E-8585-7CCD09355441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCB747E1-F645-4B9E-8585-7CCD09355441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCB747E1-F645-4B9E-8585-7CCD09355441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1CBDAFA-8FA2-4A71-A0A6-36F3D3F87D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1CBDAFA-8FA2-4A71-A0A6-36F3D3F87D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1CBDAFA-8FA2-4A71-A0A6-36F3D3F87D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1CBDAFA-8FA2-4A71-A0A6-36F3D3F87D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
