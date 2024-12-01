@@ -1,16 +1,21 @@
-﻿using ServerSide.ClientProxy;
+﻿using Newtonsoft.Json.Linq;
+using ServerSide.ClientProxy;
 using System;
 using System.Collections.Generic;
 using System.Device.Location;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ServerSide
 {
@@ -26,6 +31,10 @@ namespace ServerSide
             headers.Add("Access-Control-Allow-Headers", "Content-Type, Accept, Authorization");
         }
 
+        /**
+         * @param start: adresse de départ
+         * @param end: adresse d'arrivée
+         */
         public string GetPath(string start, string end)
         {
             /*var headers = WebOperationContext.Current.OutgoingResponse.Headers;
@@ -47,20 +56,132 @@ namespace ServerSide
             List<Position> positions = await positionTask;
             foreach (var position in positions) { Console.WriteLine(position); }*/
             Console.WriteLine("GetPath");
-            string response = CallKeyPoints(start, end).Result;
-            Console.WriteLine("response: " + response);
-            return response;
+            Console.WriteLine("start: " + start);
+            Console.WriteLine("end: " +  end);
+
+            List<Position> response = CallKeyPoints(start, end).Result;
+            Console.WriteLine("response: \n" + response);
+            
+            string steps = GetSteps(response[0], response[2]).Result;
+            steps += GetSteps(response[2], response[3]).Result;
+            steps += GetSteps(response[3], response[1]).Result;
+            Console.WriteLine("STEPS: " + steps);
+
+            return steps;
         }
 
-        public async Task<string> CallKeyPoints(string start, string end)
+        // exemple qui fonctionne : Rue de la Sainte Famille 31200 Toulouse -> Rue Alphonse Daudet 31200 Toulouse
+
+        public async Task<string> GetSteps(Position start, Position end)
+        {
+            try
+            {
+                Console.WriteLine("start: " + start + ", end: " + end);
+
+                string apiKey = "AIzaSyC5flSpbKIIXEsMApGjy1OHjS3XIvmPd10";
+                string url = "http://router.project-osrm.org/route/v1/driving/"
+                    + start.lng.ToString(CultureInfo.InvariantCulture) + ","
+                    + start.lat.ToString(CultureInfo.InvariantCulture) + ";"
+                    + end.lng.ToString(CultureInfo.InvariantCulture) + ","
+                    + end.lat.ToString(CultureInfo.InvariantCulture)
+                    + "?overview=full&geometries=polyline&steps=true";
+
+                Console.WriteLine("URL: "+url);
+
+                using (HttpClient client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+
+                        // Analyser la réponse JSON
+                        JObject jsonResponse = JObject.Parse(responseBody);
+
+                        // Vérifier si des étapes sont disponibles
+                        if (jsonResponse["routes"] != null && jsonResponse["routes"].HasValues)
+                        {
+                            var firstRoute = jsonResponse["routes"].FirstOrDefault();
+                            var firstLeg = firstRoute?["legs"]?.FirstOrDefault();
+                            var steps = firstLeg?["steps"];
+
+                            if (steps != null && steps.HasValues)
+                            {
+                                string path = "";
+                                foreach (var step in steps)
+                                {
+                                    // Extraire l'instruction basée sur le type de manœuvre et le nom de la rue
+                                    string maneuverType = step["maneuver"]?["type"]?.ToString();
+                                    string maneuverModifier = step["maneuver"]?["modifier"]?.ToString();
+                                    string maneuverLongitude = step["maneuver"]?["location"][0].ToString();
+                                    string maneuverLatitude = step["maneuver"]?["location"][1].ToString();
+                                    string duration = step["duration"].ToString();
+                                    string distance = step["distance"].ToString();
+                                    string exit = " ";
+
+                                    if (maneuverType == "roundabout")
+                                    {
+                                        exit = step["maneuver"]["exit"].ToString();
+                                    }
+
+
+                                    // Construire l'instruction
+                                    string instruction = string.IsNullOrEmpty(maneuverType)
+                                        ? "Étape inconnue"
+                                        : $"({maneuverType} {exit} {maneuverModifier}), [({distance}m)-({duration}s)]";
+
+                                    // Ajouter l'instruction à la chaîne path
+                                    string instruction_unitaire = "";
+                                    instruction_unitaire += maneuverModifier + "+";
+                                    instruction_unitaire += maneuverType + "+";
+                                    instruction_unitaire += exit + "+";
+                                    instruction_unitaire += duration + "+";
+                                    instruction_unitaire += distance + "+";
+                                    instruction_unitaire += maneuverLongitude + "+";
+                                    instruction_unitaire += maneuverLatitude + "|";
+                                    path += instruction_unitaire;
+                                }
+                                return path;
+                            }
+                            else
+                            {
+                                return "Aucune étape trouvée.";
+                            }
+                        }
+                        else
+                        {
+                            return "Aucune direction trouvée.";
+                        }
+                    }
+                    else
+                    {
+                        return "Erreur lors de l'appel à l'API OSRM.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Capture des erreurs potentielles
+                Console.WriteLine("Erreur dans GetSteps: " + ex.Message);
+                return "Une erreur s'est produite lors du traitement.";
+            }
+        }
+
+        /**
+         * @return [position depart, position arrivee, position stationProcheDepart, position stationProcheArrivee]
+         */
+        public async Task<List<Position>> CallKeyPoints(string start, string end)
         {
             Utils utils = new Utils();
             List<Position> positions1 = new List<Position>();
 
             // Ville - Contract - Adresse - Station Proche - Return
             string cityA = utils.GetCity(start);
-            string cityB = utils.GetCity(end);
             Console.WriteLine("cityA: " + cityA);
+            string cityB = utils.GetCity(end);
+            Console.WriteLine("cityB: " + cityB);
+
 
             List<Place> placesA = RetreveContract(cityA);
             Position startPosition = AddressToPosition(start).Result;
@@ -69,6 +190,7 @@ namespace ServerSide
 
             List<Place> placesB = RetreveContract(cityB);
             Position endPosition =  AddressToPosition(end).Result;
+            Console.WriteLine("endPosition: " + endPosition);
 
 
             positions1.Add(startPosition);
@@ -84,9 +206,11 @@ namespace ServerSide
                 positions1.Add(lastStation.position);
             }
 
+            return positions1;
+            /*
             string response = "";
             foreach (var position in positions1) { response += position.ToString() + "\n"; }
-            return response;
+            return response;*/
 
             /*
             Console.WriteLine("CallKeyPoints");
@@ -120,7 +244,7 @@ namespace ServerSide
             return places;*/
 
             String response = CallTest(city).Result;
-            Console.WriteLine("result : " + response);
+            //Console.WriteLine("result : " + response);
             List<Place> places = JsonSerializer.Deserialize<List<Place>>(response);   // remettre le call au Proxy plus tard
             Console.WriteLine(places);
             return places;
@@ -140,7 +264,7 @@ namespace ServerSide
             return await response.Content.ReadAsStringAsync();//.Result;
         }
 
-        
+
 
         /*
         public List<Place> RetreveContract(string city)
@@ -159,22 +283,43 @@ namespace ServerSide
 
         public async Task<Position> AddressToPosition(string address)
         {
-            var headers = WebOperationContext.Current.OutgoingResponse.Headers;
-            headers.Remove("Access-Control-Allow-Origin"); // Remove any existing values
-            headers.Add("Access-Control-Allow-Origin", "*");
-            Console.WriteLine("Start address to position call");
-            HttpResponseMessage response = await client.GetAsync("https://api-adresse.data.gouv.fr/search/?q=" + address.Replace(" ", "+"));
-            response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
-            var position = new Position();
-            var jsonResponse = JsonDocument.Parse(responseBody);
-            foreach (var feature in jsonResponse.RootElement.GetProperty("features").EnumerateArray())
+            try
             {
-                var coordinates = feature.GetProperty("geometry").GetProperty("coordinates").EnumerateArray();
-                position = new Position { lng = coordinates.First().GetDouble(), lat = coordinates.Last().GetDouble() };
+                Console.WriteLine("Start address to position call: " + address);
+
+                // Remplacement de l'espace par "+" pour un encodage correct
+                HttpResponseMessage response = await client.GetAsync("https://api-adresse.data.gouv.fr/search/?q=" + address.Replace(" ", "+"));
+
+                // Vérifier que la réponse est réussie
+                response.EnsureSuccessStatusCode();
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                var position = new Position();
+                var jsonResponse = JsonDocument.Parse(responseBody);
+
+                // Assurez-vous qu'il y a des "features" dans la réponse
+                if (jsonResponse.RootElement.GetProperty("features").EnumerateArray().Any())
+                {
+                    foreach (var feature in jsonResponse.RootElement.GetProperty("features").EnumerateArray())
+                    {
+                        var coordinates = feature.GetProperty("geometry").GetProperty("coordinates").EnumerateArray();
+                        position = new Position { lng = coordinates.First().GetDouble(), lat = coordinates.Last().GetDouble() };
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Aucune feature trouvée pour l'adresse : " + address);
+                }
+
+                Console.WriteLine("End address to position call: " + address);
+                return position;
             }
-            Console.WriteLine("End address to position call");
-            return position;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erreur dans AddressToPosition pour l'adresse '" + address + "': " + ex.Message);
+                return null;
+            }
         }
 
         public async Task<List<Position>> GetKeyPoints(string start, string end)

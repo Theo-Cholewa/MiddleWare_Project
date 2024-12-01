@@ -40,10 +40,6 @@ map.on('click', function(e) {
           else if (endInputField && !endInputField.value) {
             endInputField.value = fullAddress;
           }
-
-          if (startInputField.value && endInputField.value) {
-            draw(startInputField.value, endInputField.value);
-          }
         }
         else {
           console.log("Aucune adresse trouvée");
@@ -108,6 +104,7 @@ function getCoordinates(address) {
 
 
 function getRoute(startLng, startLat, endLng, endLat) {
+  
   const apiKey = "5b3ce3597851110001cf624890fd5d77ab2949f7b0b6d7b9ba15d1df";
   const url = `https://api.openrouteservice.org/v2/directions/driving-car?api_key=${apiKey}&start=${startLng},${startLat}&end=${endLng},${endLat}`;
 

@@ -17,3 +17,23 @@ C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSid
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\RouterSe.8733DD71.Up2Date
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.exe
 C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.pdb
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.exe.config
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\ServerSide.pdb
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Memory.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Buffers.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.ValueTuple.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\RouterServer.csproj.AssemblyReference.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\RouterServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.exe.config
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\RouterServer.csproj.CoreCompileInputs.cache
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\RouterSe.8733DD71.Up2Date
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.exe
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\obj\Debug\ServerSide.pdb
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PolyPro\OneDrive\Bureau\Polytech\SI4\middleware\04 front dev\MiddleWare_Project\backend\ServerSide\ServerSide\bin\Debug\Newtonsoft.Json.xml

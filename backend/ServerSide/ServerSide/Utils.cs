@@ -31,9 +31,10 @@ namespace ServerSide
             return best;
         }
 
-
+        // Le format doit être de la forme "nom de rue code_postal ville"
         public string GetCity(string address)
         {
+            Console.WriteLine("GetCity call " + address);
             string res = "";
             string[] strings = address.Split(' ');
             for (int i = 0; i < strings.Length; i++)

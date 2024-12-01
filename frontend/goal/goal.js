@@ -17,6 +17,8 @@ class Goal extends HTMLElement {
                 let templateContent = new DOMParser().parseFromString(htmlContent, "text/html").querySelector("template").content;
                 shadowRoot.appendChild(templateContent.cloneNode(true));
                 this.setupLogic(); // Appeler la fonction pour configurer la logique du composant
+
+                this.dispatchEvent(new CustomEvent('attached'));
             })
             .catch(error => {
                 console.error("Erreur lors du chargement du fichier HTML : ", error);
