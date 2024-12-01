@@ -1,50 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\",
+  "WorkspaceRootPath": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\polypro\\onedrive\\bureau\\polytech\\si4\\middleware\\04 front dev\\middleware_project\\backend\\serverside\\serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serversoap\\soapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|solutionrelative:serversoap\\soapserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\polypro\\onedrive\\bureau\\polytech\\si4\\middleware\\04 front dev\\middleware_project\\backend\\serverside\\serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\keypoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\keypoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serversoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCB747E1-F645-4B9E-8585-7CCD09355441}|ServerSoap\\Proxy.csproj|solutionrelative:serversoap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\ServerSide.csproj|solutionrelative:serverside\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\serverside\\serverside\\connected services\\clientproxy\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\connected services\\clientproxy\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,156 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Place.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Place.cs",
-              "RelativeDocumentMoniker": "ServerSide\\Place.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Place.cs",
-              "RelativeToolTip": "ServerSide\\Place.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T22:16:43.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Utils.cs",
-              "RelativeDocumentMoniker": "ServerSide\\Utils.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Utils.cs",
-              "RelativeToolTip": "ServerSide\\Utils.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAwwDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T22:03:34.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KeyPoints.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\KeyPoints.cs",
-              "RelativeDocumentMoniker": "ServerSide\\KeyPoints.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\KeyPoints.cs",
-              "RelativeToolTip": "ServerSide\\KeyPoints.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:41:44.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoutingServer.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
-              "RelativeDocumentMoniker": "ServerSide\\RoutingServer.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
-              "RelativeToolTip": "ServerSide\\RoutingServer.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAcwEEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T08:04:44.913Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
-              "RelativeDocumentMoniker": "ServerSide\\Program.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
-              "RelativeToolTip": "ServerSide\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "DocumentIndex": 0,
+              "Title": "RoutingServer.cs",
+              "DocumentMoniker": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
+              "RelativeDocumentMoniker": "ServerSide\\RoutingServer.cs",
+              "ToolTip": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
+              "RelativeToolTip": "ServerSide\\RoutingServer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAvwH0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:33:31.794Z",
+              "WhenOpened": "2024-11-29T08:04:44.913Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Program.cs",
-              "RelativeDocumentMoniker": "ServerSoap\\Program.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\Program.cs",
-              "RelativeToolTip": "ServerSoap\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:32:59.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
-              "RelativeDocumentMoniker": "ServerSide\\App.config",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
-              "RelativeToolTip": "ServerSide\\App.config",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-29T21:18:07.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Reference.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Connected Services\\ClientProxy\\Reference.cs",
-              "RelativeDocumentMoniker": "ServerSide\\Connected Services\\ClientProxy\\Reference.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Connected Services\\ClientProxy\\Reference.cs",
-              "RelativeToolTip": "ServerSide\\Connected Services\\ClientProxy\\Reference.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAqwEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:17:16.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SoapServer.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\SoapServer.cs",
-              "RelativeDocumentMoniker": "ServerSoap\\SoapServer.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSoap\\SoapServer.cs",
-              "RelativeToolTip": "ServerSoap\\SoapServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\Utils.cs",
+              "RelativeDocumentMoniker": "ServerSide\\Utils.cs",
+              "ToolTip": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\Utils.cs",
+              "RelativeToolTip": "ServerSide\\Utils.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCEAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:15:40.488Z",
+              "WhenOpened": "2024-11-30T15:42:32.035Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
-              "RelativeDocumentMoniker": "ServerSide\\App.config",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\App.config",
-              "RelativeToolTip": "ServerSide\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-26T09:21:08.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
-              "RelativeDocumentMoniker": "ServerSide\\Program.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\ServerSide\\ServerSide\\Program.cs",
-              "RelativeToolTip": "ServerSide\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:54:16.69Z"
             }
           ]
         }
