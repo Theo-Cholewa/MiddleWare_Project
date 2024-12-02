@@ -40,35 +40,97 @@ class OriginDestinationInput extends HTMLElement {
 
                             console.log("steps: ", steps);
 
+                            let coords = [];
+
+                            for (let i=0; i<steps.length-1; i++) {
+                                const currentStep = steps[i].split('+');
+
+                                const currentStepLng = currentStep[5].replace(',', '.');
+                                const currentStepLat = currentStep[6].replace(',', '.');
+            
+                                const tab = [currentStepLat, currentStepLng];
+                                coords.push(tab);
+                            }
+
+                            console.log("send event");
+                            // Envoyer l'event
+                            const sendPath = new CustomEvent('pathUpdated', {
+                                detail: {
+                                    coord: coords
+                                }
+                            });
+
+                            window.dispatchEvent(sendPath);
+
+                            // Supprimer toutes les side-instructions
+                            const sideInstructionContainer = document.getElementById("side-instructions");
+                            if (sideInstructionContainer) {
+                                const existingSideInstructions = sideInstructionContainer.querySelector("side-instruction");
+                                if (existingSideInstructions) {
+                                    for (let j=0; j<existingSideInstructions.length; j++) {
+                                        existingSideInstructions[j].remove();
+                                    }
+                                }
+                            }
+
+                            // Créer les side-instructions
+                            for (let i=2; i<steps.length-1; i++) {
+                                const sideInstruction = document.createElement("side-instruction");
+                                sideInstruction.addEventListener('attached', () => {
+                                    const data = steps[i].split('+');
+                                    const dataDistance = data[4];
+                                    const modifier = data[1];
+                                    let img_data = "";
+                                    if (modifier == "end of road") {
+                                        img_data += "end_of_road" + '_';
+                                    } else if (modifier == "arrive" && i != steps.length-2) {
+                                        img_data += "velo" + '_'
+                                    } else {
+                                        img_data += data[1] + '_';
+                                    }
+                                    if (modifier != "depart" && modifier != "arrive" && modifier != "end of road") {
+                                        img_data += data[0];
+                                    }
+                                    img_data += ".png";
+
+                                    const img = sideInstruction.shadowRoot.querySelector("img");
+                                    const distance = sideInstruction.shadowRoot.querySelector("#data-distance");
+
+                                    if (distance && img) {
+                                        img.src = "../assets/arrows/" + img_data;
+                                        distance.textContent = dataDistance + "m";
+
+                                        sideInstructionContainer.appendChild(sideInstruction)
+                                    } else {
+                                        console.error("data-distance introuvable dans le Shadow DOM");
+                                    }
+                                })
+                            }
+
                             // Créer l'élément goal-component
                             const goalComponent = document.createElement("goal-component")
                             goalComponent.addEventListener('attached', () => {
-                                console.log("attached");
                                 const goal = goalComponent.shadowRoot.querySelector("#goal");
 
                                 if (goal) {
-                                    console.log("goal exists");
                                     let distanceSum = 0;
                                     let timeSum = 0;
 
                                     for (let i=0; i<steps.length; i++) {
-                                        console.log("step: "+i);
                                         const splited = steps[i].split('+');
                                         const distance = parseFloat(splited[4]);
                                         const time = parseFloat(splited[3]);
-                                        console.log("distance: ", distance);
-                                        console.log("time: ", time);
 
                                         if (distance != undefined && !isNaN(distance)) {
-                                            console.log("DISTANCE ADDED");
                                             distanceSum += distance;
                                         }
 
                                         if (time != undefined && !isNaN(time)) {
-                                            console.log("TIME ADDED");
                                             timeSum += time;
                                         }
                                     }
+                                    console.log("distance: ", distanceSum);
+                                    console.log("time: ", timeSum);
                                     timeSum /= 60;
                                     const totTime = timeSum.toFixed(2);
                                     let minutes = Math.floor(totTime);
@@ -95,10 +157,26 @@ class OriginDestinationInput extends HTMLElement {
                             // Créer l'élément main_instruction
                             const mainInstruction = document.createElement("main-instruction");
                             mainInstruction.addEventListener('attached', () => {
+
+                                let img_data = "";
+                                if (modifier == "end of road") {
+                                    img_data += "end_of_road" + '_';
+                                } else if (modifier == "arrive" && i != steps.length-2) {
+                                    img_data += "velo" + '_'
+                                } else {
+                                    img_data += firstStep[1] + '_';
+                                }
+                                if (modifier != "depart" && modifier != "arrive" && modifier != "end of road") {
+                                    img_data += firstStep[0];
+                                }
+                                img_data += ".png";
+
+                                const dataImg = mainInstruction.shadowRoot.querySelector("#data-img");
                                 const dataDistance = mainInstruction.shadowRoot.querySelector("#data-distance");
                                 const dataText = mainInstruction.shadowRoot.querySelector("#data-text");
 
-                                if (dataDistance && dataText) {
+                                if (dataImg && dataDistance && dataText) {
+                                    dataImg.src = "../assets/arrows/" + img_data;
                                     dataDistance.textContent = distance + 'm';
                                     dataText.textContent = modifier;
 

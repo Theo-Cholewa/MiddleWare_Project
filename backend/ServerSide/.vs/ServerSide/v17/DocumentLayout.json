@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|c:\\users\\polypro\\onedrive\\bureau\\polytech\\si4\\middleware\\04 front dev\\middleware_project\\backend\\serverside\\serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD5EE67E-110F-479A-804F-CCBEF75EA31C}|ServerSide\\RouterServer.csproj|solutionrelative:serverside\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "ServerSide\\RoutingServer.cs",
               "ToolTip": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\RoutingServer.cs",
               "RelativeToolTip": "ServerSide\\RoutingServer.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAvwH0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwKoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T08:04:44.913Z",
               "EditorCaption": ""
@@ -45,10 +45,9 @@
               "RelativeDocumentMoniker": "ServerSide\\Utils.cs",
               "ToolTip": "C:\\Users\\PolyPro\\OneDrive\\Bureau\\Polytech\\SI4\\middleware\\04 front dev\\MiddleWare_Project\\backend\\ServerSide\\ServerSide\\Utils.cs",
               "RelativeToolTip": "ServerSide\\Utils.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCEAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T15:42:32.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T15:42:32.035Z"
             }
           ]
         }

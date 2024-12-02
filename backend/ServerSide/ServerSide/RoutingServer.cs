@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
+using System.Security.Policy;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
@@ -69,6 +70,7 @@ namespace ServerSide
 
             return steps;
         }
+
 
         // exemple qui fonctionne : Rue de la Sainte Famille 31200 Toulouse -> Rue Alphonse Daudet 31200 Toulouse
 
