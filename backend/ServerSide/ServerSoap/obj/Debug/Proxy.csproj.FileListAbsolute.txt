@@ -1,7 +1,0 @@
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\bin\Debug\ServerSoap.pdb
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\obj\Debug\Proxy.csproj.AssemblyReference.cache
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\obj\Debug\Proxy.csproj.CoreCompileInputs.cache
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\obj\Debug\ServerSoap.pdb
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\bin\Debug\ServerSoap.exe.config
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\bin\Debug\ServerSoap.exe
-C:\Users\chole\OneDrive\Desktop\Travail\SI4\Middleware\Project\backend\ServerSide\ServerSoap\obj\Debug\ServerSoap.exe

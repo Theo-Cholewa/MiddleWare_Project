@@ -11,11 +11,12 @@ map.on('click', function(e) {
   
   console.log("Coordonnées du clic : Latitude = " + lat + ", Longitude = " + lng);
 
-  // Sélectionner les éléments auto-complete-input
-  const startInput = document.querySelector('auto-complete-input[slot="origin"]');
-  const endInput = document.querySelector('auto-complete-input[slot="destination"]');
+  // Sélectionner l'élément origin-destination-input
+  const originDestinationInput = document.querySelector('origin-destination-input');
+  const startInput = originDestinationInput.shadowRoot.querySelector('#start');
+  const endInput = originDestinationInput.shadowRoot.querySelector('#end');
 
-  // Vérifier si l'un des deux champs est vide
+  // Vérifier si l'un des champs est vide
   const startInputField = startInput ? startInput.shadowRoot.querySelector('input') : null;
   const endInputField = endInput ? endInput.shadowRoot.querySelector('input') : null;
 
@@ -49,3 +50,36 @@ map.on('click', function(e) {
       });
   }
 });
+
+
+function getRoute(coords) {
+  clearMap()
+
+  const latLngs = coords.map(coord => [parseFloat(coord[0]), parseFloat(coord[1])]);
+  const routeLine = L.polyline(latLngs, { color: 'blue', weight: 4 }).addTo(map);
+
+  map.fitBounds(routeLine.getBounds());
+}
+
+function clearMap() {
+  map.eachLayer(function(layer) {
+    if (layer instanceof L.Polyline) {
+      map.removeLayer(layer);
+    }
+  });
+}
+
+window.addEventListener('origin-destination-changed', function(event) {
+  const { origin, destination } = event.detail;
+  console.log(`Received origin: ${origin}, destination: ${destination}`);
+
+  // Appelez la fonction draw avec les paramètres appropriés
+  //draw(origin, destination);
+});
+
+window.addEventListener('pathUpdated', function (event) {
+  const { coord } = event.detail;
+  console.log('Coords: ' + JSON.stringify(coord));  // Affiche correctement le tableau de tableaux
+
+  getRoute(coord);
+})

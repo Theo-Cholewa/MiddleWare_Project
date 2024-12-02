@@ -3,32 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\routingserver\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\routingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\iroutingserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\routingserver\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\routingserver\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\routingserver\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\proxycache\\genericproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\genericproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\proxycache\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\proxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ProxyCache||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\proxycache\\genericproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\genericproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\proxycache\\iproxycache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +46,6 @@
       "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\routingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FBF1DDF-FFD4-471C-989B-B5FF54C51F2B}|RoutingServer\\RoutingServer.csproj|solutionrelative:routingserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\proxycache\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,7 +54,7 @@
       "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|ProxyCache||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\proxycache\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,7 +64,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -69,20 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Utils.cs",
-              "RelativeDocumentMoniker": "RoutingServer\\Utils.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Utils.cs",
-              "RelativeToolTip": "RoutingServer\\Utils.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:08:02.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Position.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Position.cs",
               "RelativeDocumentMoniker": "RoutingServer\\Position.cs",
@@ -95,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Place.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Place.cs",
               "RelativeDocumentMoniker": "RoutingServer\\Place.cs",
@@ -108,20 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenericProxyCache.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\GenericProxyCache.cs",
-              "RelativeDocumentMoniker": "ProxyCache\\GenericProxyCache.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\GenericProxyCache.cs",
-              "RelativeToolTip": "ProxyCache\\GenericProxyCache.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:24:04.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\App.config",
               "RelativeDocumentMoniker": "ProxyCache\\App.config",
@@ -129,18 +106,20 @@
               "RelativeToolTip": "ProxyCache\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAgwA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-01T10:59:56.94Z"
+              "WhenOpened": "2024-12-01T10:59:56.94Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "ProxyCache",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\ProxyCache.csproj",
               "RelativeDocumentMoniker": "ProxyCache\\ProxyCache.csproj",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\ProxyCache.csproj*",
-              "RelativeToolTip": "ProxyCache\\ProxyCache.csproj*",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\ProxyCache.csproj",
+              "RelativeToolTip": "ProxyCache\\ProxyCache.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-01T10:59:34.403Z"
+              "WhenOpened": "2024-12-01T10:59:34.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,14 +129,14 @@
               "RelativeDocumentMoniker": "RoutingServer\\RoutingServer.cs",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\RoutingServer.cs",
               "RelativeToolTip": "RoutingServer\\RoutingServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBYAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T10:38:30.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\Program.cs",
               "RelativeDocumentMoniker": "ProxyCache\\Program.cs",
@@ -165,7 +144,8 @@
               "RelativeToolTip": "ProxyCache\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:50:32.399Z"
+              "WhenOpened": "2024-12-01T10:50:32.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -177,11 +157,12 @@
               "RelativeToolTip": "ProxyCache\\ProxyCache.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAowB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:48:11.547Z"
+              "WhenOpened": "2024-12-01T10:48:11.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IProxyCache.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\IProxyCache.cs",
               "RelativeDocumentMoniker": "ProxyCache\\IProxyCache.cs",
@@ -189,11 +170,12 @@
               "RelativeToolTip": "ProxyCache\\IProxyCache.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:47:05.266Z"
+              "WhenOpened": "2024-12-01T10:47:05.266Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\App.config",
               "RelativeDocumentMoniker": "RoutingServer\\App.config",
@@ -206,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IRoutingServer.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\IRoutingServer.cs",
               "RelativeDocumentMoniker": "RoutingServer\\IRoutingServer.cs",
@@ -219,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Program.cs",
               "RelativeDocumentMoniker": "RoutingServer\\Program.cs",
@@ -227,7 +209,34 @@
               "RelativeToolTip": "RoutingServer\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:35:47.855Z"
+              "WhenOpened": "2024-12-01T10:35:47.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Utils.cs",
+              "RelativeDocumentMoniker": "RoutingServer\\Utils.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Utils.cs",
+              "RelativeToolTip": "RoutingServer\\Utils.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T14:08:02.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GenericProxyCache.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\GenericProxyCache.cs",
+              "RelativeDocumentMoniker": "ProxyCache\\GenericProxyCache.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\GenericProxyCache.cs",
+              "RelativeToolTip": "ProxyCache\\GenericProxyCache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T13:24:04.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
