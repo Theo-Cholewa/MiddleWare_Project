@@ -15,7 +15,7 @@ namespace RoutingServer
         public Place GetNearestPlace(List<Place> places, Position coord, Position other)
         {
             GeoCoordinate geoCoordinate = new GeoCoordinate(coord.lat, coord.lng);
-            GeoCoordinate geoCoordinateOther = new GeoCoordinate(other.lat, other.lng);
+            
             GeoCoordinate geoCoordinateBest;
             Place best = null;
             foreach (var place in places)
@@ -33,7 +33,12 @@ namespace RoutingServer
                     best = place;
                 }
             }
-
+            if(other == null)
+            {
+                return best;
+            }
+    
+            GeoCoordinate geoCoordinateOther = new GeoCoordinate(other.lat, other.lng);
             geoCoordinateBest = new GeoCoordinate(best.position.lat, best.position.lng);
             double trajetCoordBestEndOther = geoCoordinate.GetDistanceTo(geoCoordinateBest) + geoCoordinate.GetDistanceTo(geoCoordinateOther); ;
             if(trajetCoordBestEndOther > geoCoordinate.GetDistanceTo(geoCoordinateOther)*2){
@@ -45,7 +50,6 @@ namespace RoutingServer
 
         public string GetCity(string address)
         {
-            Console.WriteLine("ADDRESS: " + address);
             string res = "";
             string[] strings = address.Split(' ');
             for (int i = 0; i < strings.Length; i++)
@@ -63,15 +67,13 @@ namespace RoutingServer
                     break;
                 }
             }
-            Console.WriteLine("CITY: " + res);
             // si on n'a pas de code postal
             if(res == "")
             {
                 string[] a = address.Split(',');
-                return a[a.Length - 2]; // -1 = pays
+                return a[a.Length - 2].Replace(" ",""); // -1 = pays
             }
-            Console.WriteLine("CITY: " + res);
-            return res;
+            return res.Replace(" ", "");
         }
     }
 }
