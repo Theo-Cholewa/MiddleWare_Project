@@ -51,15 +51,35 @@ map.on('click', function(e) {
   }
 });
 
-
-function getRoute(coords) {
+function getRoute(coords, col) {
   clearMap()
 
-  const latLngs = coords.map(coord => [parseFloat(coord[0]), parseFloat(coord[1])]);
-  const routeLine = L.polyline(latLngs, { color: 'blue', weight: 4 }).addTo(map);
+  let currentColour = 'blue';
+  let colours = ['blue'];
+  for (let i = 1; i < coords.length; i++) {
+    if (col.includes(i)) {
+      currentColour = currentColour === "blue" ? "red" : "blue";
+    }
+    colours.push(currentColour);
+  }
 
-  map.fitBounds(routeLine.getBounds());
+  const latLngs = coords.map(coord => [parseFloat(coord[0]), parseFloat(coord[1])]);
+
+  const polylineSegments = [];
+
+  for (let i = 0; i < latLngs.length - 1; i++) {
+    const segment = [latLngs[i], latLngs[i + 1]];
+    const colour = colours[i];
+
+    L.polyline(segment, { color: colour, weight: 4 }).addTo(map);
+
+    polylineSegments.push(segment);
+  }
+
+  const bounds = L.latLngBounds(polylineSegments.flat());
+  map.fitBounds(bounds);
 }
+
 
 function clearMap() {
   map.eachLayer(function(layer) {
@@ -69,17 +89,10 @@ function clearMap() {
   });
 }
 
-window.addEventListener('origin-destination-changed', function(event) {
-  const { origin, destination } = event.detail;
-  console.log(`Received origin: ${origin}, destination: ${destination}`);
-
-  // Appelez la fonction draw avec les paramètres appropriés
-  //draw(origin, destination);
-});
-
 window.addEventListener('pathUpdated', function (event) {
-  const { coord } = event.detail;
+  const { coord, col } = event.detail;
   console.log('Coords: ' + JSON.stringify(coord));  // Affiche correctement le tableau de tableaux
+  console.log('colours: ' + col);
 
-  getRoute(coord);
+  getRoute(coord, col);
 })
