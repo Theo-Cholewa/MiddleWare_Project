@@ -11,8 +11,10 @@ class OriginDestinationInput extends HTMLElement {
             console.log(shadowRoot); // Log shadowRoot content for debugging
 
             // Sélectionner le bouton et lui ajouter un écouteur d'événement
-            let button = shadowRoot.querySelector("button");
-            button.addEventListener("click", function() {
+            document.addEventListener("keydown", function(event) {
+                if (event.key !== "Enter") {
+                    return;
+                }
                 let originComponent = shadowRoot.querySelector('auto-complete-input#start');
                 let destinationComponent = shadowRoot.querySelector('auto-complete-input#end');
 

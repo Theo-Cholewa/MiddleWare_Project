@@ -1,23 +1,9 @@
 #logic {
     height: auto;
-    width: 700px;
+    width: 550px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    button {
-        height: 60px;
-        padding: 10px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 50px;
-        background-color: gray;
-    }
-
-    button:hover {
-        background-color: rgb(104, 104, 104);
-    }
 }
 
 #begin, #arrive {
