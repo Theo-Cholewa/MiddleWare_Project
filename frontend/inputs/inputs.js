@@ -21,13 +21,14 @@ class OriginDestinationInput extends HTMLElement {
                     let destinationValue = destinationComponent.inputValue;
 
                     console.log(`Origin: ${originValue}`);
-                    console.log(`Destination: ${destinationValue}`);
-
-                    //http://localhost:8734/Design_Time_Addresses/ServerSide/Service1/path?start=${originValue}&end=${destinationValue}
-                   
+                    console.log(`Destination: ${destinationValue}`);                   
 
                     fetch(`http://localhost:8734/RoutingServer/path?start=${originValue}&end=${destinationValue}`).then( 
                         response => response.json().then(data => {
+                            if(data.GetPathResult === "Aucun chemin trouvé."){
+                                console.log("Aucun chemin trouvé.");
+                                return;
+                            }
                             console.log("DATA: ");
                             console.log(data); // les steps sont de la forme step1|step2|...|stepn où stepi est de la forme (modifier)+type+(exit)+duration+distance+longitude+latitude
 

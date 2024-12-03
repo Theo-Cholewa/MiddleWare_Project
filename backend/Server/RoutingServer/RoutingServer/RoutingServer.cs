@@ -24,42 +24,77 @@ namespace ServerRouting
         public string GetPath(string start, string end)
         {
             List<Position> response = GetKeyPoints(start, end);
+            Console.WriteLine("KEYPOINTS: ");
+            for (int i = 0; i < response.Count; i++)
+            {
+                Console.WriteLine("POSITION: " + response[i].lat + " " + response[i].lng);
+            }
+
+            if (response.Count == 0)
+            {
+                return "Aucun chemin trouvé.";
+            }
+            string steps = "";
+            for(int i = 0; i < response.Count; i+=2)
+            {
+                steps += GetSteps(response[i], response[i + 1]);
+            }
+            /*
             string steps = GetSteps(response[0], response[2]);
             steps += GetSteps(response[2], response[3]);
-            steps += GetSteps(response[3], response[1]);
+            steps += GetSteps(response[3], response[1]);*/
             Console.WriteLine("STEPS: " + steps);
-
             return steps;
         }
 
         public List<Position> GetKeyPoints(string start, string end)
         {
             Utils utils = new Utils();
-            List<Position> positions1 = new List<Position>();
+            List<Position> positions = new List<Position>();
 
             // Ville - Contract - Adresse - Station Proche - Return
             string cityA = utils.GetCity(start);
             string cityB = utils.GetCity(end);
 
-            List<Place> placesA = CallContract(cityA);
-            Position startPosition = CallAddressToPosition(start);
+            List<Place> stationsCityA;
+            //List<Place> stationsCityB;
 
-            List<Place> placesB = CallContract(cityB);
+            Position startPosition = CallAddressToPosition(start);
             Position endPosition = CallAddressToPosition(end);
 
-
-            positions1.Add(startPosition);
-            positions1.Add(endPosition);
-
-            if (placesA != null && placesA.Count > 0 && placesB != null && placesB.Count > 0)
+            // 1er cas : même ville
+            if (cityA.Equals(cityB))
             {
-                Place firstStation = utils.GetNearestPlace(placesA, startPosition);
-                positions1.Add(firstStation.position);
+                stationsCityA = CallContract(cityA);
+                // si on a pas de contrat pour la ville on fait un trajet direct
+                if(stationsCityA == null || stationsCityA.Count == 0)
+                {
+                    positions.Add(startPosition);
+                    positions.Add(endPosition);
+                    return positions;
+                }
+                // sinon on fait un trajet avec 2 stations intermédiaires 
+                else
+                {
+                    Place firstStation = utils.GetNearestPlace(stationsCityA, startPosition,endPosition);
+                    Place lastStation = utils.GetNearestPlace(stationsCityA, endPosition,startPosition);
 
-                Place lastStation = utils.GetNearestPlace(placesB, endPosition);
-                positions1.Add(lastStation.position);
+                    positions.Add(startPosition);
+                    // si on a deux stations différentes 
+                    if(firstStation != null && lastStation != null && firstStation != lastStation)
+                    {
+                        positions.Add(firstStation.position);
+                        positions.Add(lastStation.position);
+                    }
+                    positions.Add(endPosition);
+                    return positions;
+                }
             }
-            return positions1;
+            else
+            { // 2ème cas : villes différentes
+                // on doit pour chaque ville entre A et B, voir s'il y a un contrat et si c'est plus rapide de passer par une station
+            }
+            return positions;
         }
 
         public string GetSteps(Position start, Position end)
@@ -162,21 +197,23 @@ namespace ServerRouting
         {
             string url = "https://api.jcdecaux.com/vls/v1/stations?contract=" + city + "&apiKey=da2a1717115e9e7a90149fd7d0c4afcff086e014";
             string response = CallProxy(url);
+
+            if(response == "{ \"error\" : \"Specified contract does not exist\" }")
+            {
+                return null; // pas de contrat trouvé
+            }
             List<Place> places = JsonSerializer.Deserialize<List<Place>>(response);
+            //Console.WriteLine("places: " + places);
             return places;
         }
         public Position CallAddressToPosition(string address)
         {
+            
             string url = "https://api-adresse.data.gouv.fr/search/?q=" + address.Replace(" ", "+");
             string response = CallProxy(url);
             var position = new Position();
             var jsonResponse = JsonDocument.Parse(response);
-            foreach (var feature in jsonResponse.RootElement.GetProperty("features").EnumerateArray())
-            {
-                var coordinates = feature.GetProperty("geometry").GetProperty("coordinates").EnumerateArray();
-                position = new Position { lng = coordinates.First().GetDouble(), lat = coordinates.Last().GetDouble() };
-            }
-
+            
             if (jsonResponse.RootElement.GetProperty("features").EnumerateArray().Any())
             {
                 foreach (var feature in jsonResponse.RootElement.GetProperty("features").EnumerateArray())
@@ -189,8 +226,6 @@ namespace ServerRouting
             {
                 Console.WriteLine("Aucune feature trouvée pour l'adresse : " + address);
             }
-
-            Console.WriteLine("End address to position call: " + address);
             return position;
         }
         public string CallSteps(Position start, Position end)
