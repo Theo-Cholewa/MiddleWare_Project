@@ -34,6 +34,14 @@ A service that allows users to locate, pick up, drop off bicycles at partner sta
     ***Location*** : /frontend
     >Run the command : `http-server .`
 
+## Utilisation
+
+- **Enter two addresses** : departure &rarr; destination </br>
+    - &rarr; By clicking the map </br>
+    - &rarr; By typing it
+
+- The walking route will be displayed in **blue**, and the cycling route will be displayed in **red**.
+
 ## Authors
 
 **Théo Cholewa, IT student, Polytech' Nice-Sophia**</br>
