@@ -52,9 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|solutionrelative:proxycache\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BA35C77-AE7F-4506-A302-FCE7DBDEE596}|ProxyCache\\ProxyCache.csproj|c:\\users\\chole\\onedrive\\desktop\\travail\\si4\\middleware\\project\\backend\\server\\routingserver\\proxycache\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,11 +61,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoutingServer.cs",
+              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\RoutingServer.cs",
+              "RelativeDocumentMoniker": "RoutingServer\\RoutingServer.cs",
+              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\RoutingServer.cs",
+              "RelativeToolTip": "RoutingServer\\RoutingServer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T10:38:30.324Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,8 +90,7 @@
               "RelativeToolTip": "RoutingServer\\Position.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:07:24.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T14:07:24.148Z"
             },
             {
               "$type": "Document",
@@ -93,8 +102,7 @@
               "RelativeToolTip": "RoutingServer\\Place.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:06:56.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T14:06:56.326Z"
             },
             {
               "$type": "Document",
@@ -106,8 +114,7 @@
               "RelativeToolTip": "ProxyCache\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAgwA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-01T10:59:56.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:59:56.94Z"
             },
             {
               "$type": "Document",
@@ -118,21 +125,7 @@
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\ProxyCache\\ProxyCache.csproj",
               "RelativeToolTip": "ProxyCache\\ProxyCache.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-01T10:59:34.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoutingServer.cs",
-              "DocumentMoniker": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\RoutingServer.cs",
-              "RelativeDocumentMoniker": "RoutingServer\\RoutingServer.cs",
-              "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\RoutingServer.cs",
-              "RelativeToolTip": "RoutingServer\\RoutingServer.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBYAAABxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:38:30.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:59:34.403Z"
             },
             {
               "$type": "Document",
@@ -144,8 +137,7 @@
               "RelativeToolTip": "ProxyCache\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:50:32.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:50:32.399Z"
             },
             {
               "$type": "Document",
@@ -157,8 +149,7 @@
               "RelativeToolTip": "ProxyCache\\ProxyCache.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAowB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:48:11.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:48:11.547Z"
             },
             {
               "$type": "Document",
@@ -170,8 +161,7 @@
               "RelativeToolTip": "ProxyCache\\IProxyCache.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:47:05.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:47:05.266Z"
             },
             {
               "$type": "Document",
@@ -183,8 +173,7 @@
               "RelativeToolTip": "RoutingServer\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-01T10:40:32.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:40:32.967Z"
             },
             {
               "$type": "Document",
@@ -196,8 +185,7 @@
               "RelativeToolTip": "RoutingServer\\IRoutingServer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:37:12.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:37:12.534Z"
             },
             {
               "$type": "Document",
@@ -209,8 +197,7 @@
               "RelativeToolTip": "RoutingServer\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:35:47.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T10:35:47.855Z"
             },
             {
               "$type": "Document",
@@ -220,7 +207,7 @@
               "RelativeDocumentMoniker": "RoutingServer\\Utils.cs",
               "ToolTip": "C:\\Users\\chole\\OneDrive\\Desktop\\Travail\\SI4\\Middleware\\Project\\backend\\Server\\RoutingServer\\RoutingServer\\Utils.cs",
               "RelativeToolTip": "RoutingServer\\Utils.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAmwCcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T14:08:02.875Z",
               "EditorCaption": ""
@@ -235,8 +222,7 @@
               "RelativeToolTip": "ProxyCache\\GenericProxyCache.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:24:04.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T13:24:04.346Z"
             },
             {
               "$type": "Bookmark",

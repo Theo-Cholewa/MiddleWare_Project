@@ -21,11 +21,14 @@ class OriginDestinationInput extends HTMLElement {
                     let destinationValue = destinationComponent.inputValue;
 
                     console.log(`Origin: ${originValue}`);
-                    console.log(`Destination: ${destinationValue}`);
-                   
+                    console.log(`Destination: ${destinationValue}`);                   
 
                     fetch(`http://localhost:8734/RoutingServer/path?start=${originValue}&end=${destinationValue}`).then( 
                         response => response.json().then(data => {
+                            if(data.GetPathResult === "Aucun chemin trouvé."){
+                                console.log("Aucun chemin trouvé.");
+                                return;
+                            }
                             const pathResult = data.GetPathResult;
 
                             // Récupérer les latitudes et longitudes de chaque step
