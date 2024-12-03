@@ -76,6 +76,22 @@ function getRoute(coords, col) {
     polylineSegments.push(segment);
   }
 
+  let pinUrl = '../assets/pin.png';  // Remplacez par le chemin vers votre image
+  let latitude = parseFloat(coords[coords.length - 1][0]);
+  let longitude = parseFloat(coords[coords.length - 1][1]);
+  console.log("latitude: " + latitude);
+  console.log("longitude: " + longitude);
+
+  let pinIcon = L.icon({
+    iconUrl: pinUrl,
+    iconSize: [32, 32],  // Taille de l'icône en pixels (ajustez à votre convenance)
+    iconAnchor: [16, 32], // Point d'ancrage de l'icône (au bas de l'image)
+    popupAnchor: [0, -32] // Position du popup par rapport à l'icône
+  });
+  
+  // Créer un marker avec l'icône et le placer sur la carte
+  L.marker([latitude, longitude], { icon: pinIcon }).addTo(map);
+
   const bounds = L.latLngBounds(polylineSegments.flat());
   map.fitBounds(bounds);
 }
