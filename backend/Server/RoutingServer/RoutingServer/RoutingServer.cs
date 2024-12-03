@@ -24,12 +24,7 @@ namespace ServerRouting
         public string GetPath(string start, string end)
         {
             List<Position> response = GetKeyPoints(start, end);
-            Console.WriteLine("KEYPOINTS: ");
-            for (int i = 0; i < response.Count; i++)
-            {
-                Console.WriteLine("POSITION: " + response[i].lat + " " + response[i].lng);
-            }
-
+           
             if (response.Count == 0)
             {
                 return "Aucun chemin trouvé.";
@@ -39,11 +34,6 @@ namespace ServerRouting
             {
                 steps += GetSteps(response[i], response[i + 1]);
             }
-            /*
-            string steps = GetSteps(response[0], response[2]);
-            steps += GetSteps(response[2], response[3]);
-            steps += GetSteps(response[3], response[1]);*/
-            Console.WriteLine("STEPS: " + steps);
             return steps;
         }
 
@@ -63,7 +53,7 @@ namespace ServerRouting
             Position endPosition = CallAddressToPosition(end);
 
             // 1er cas : même ville
-            if (cityA.Equals(cityB))
+            if (cityA==cityB)
             {
                 stationsCityA = CallContract(cityA);
                 // si on a pas de contrat pour la ville on fait un trajet direct
@@ -92,7 +82,34 @@ namespace ServerRouting
             }
             else
             { // 2ème cas : villes différentes
-                // on doit pour chaque ville entre A et B, voir s'il y a un contrat et si c'est plus rapide de passer par une station
+              // on doit pour chaque ville entre A et B, voir s'il y a un contrat et si c'est plus rapide de passer par une station
+              //FindAllCities(start, end);
+
+                // ne marche pas encore car on n'arrive pas à trouver les villes entre les deux points
+                // donc on affiche uniquement le trajet direct
+                Console.WriteLine("Villes différentes");
+                stationsCityA = CallContract(cityA);
+                List<Place> stationsCityB = CallContract(cityB);
+                
+                if(stationsCityA != null && stationsCityA.Count != 0 && stationsCityB != null && stationsCityB.Count != 0)
+                {
+                    Place firstStation = utils.GetNearestPlace(stationsCityA, startPosition, null);
+                    Place lastStation = utils.GetNearestPlace(stationsCityB, endPosition, null);
+
+                    positions.Add(startPosition);
+                    if (firstStation != null && lastStation != null && firstStation != lastStation)
+                    {
+                        positions.Add(firstStation.position);
+                        positions.Add(lastStation.position);
+                    }
+                    positions.Add(endPosition);
+                    return positions;
+                }
+                else
+                {
+                    positions.Add(startPosition);
+                    positions.Add(endPosition);
+                }
             }
             return positions;
         }
@@ -241,6 +258,67 @@ namespace ServerRouting
             return response;
         }
 
+        public string CallGPStoAddress(Position position)
+        {
+            string url = "https://api-adresse.data.gouv.fr/reverse/?lon=" + position.lng + "&lat=" + position.lat;
+            string response = CallProxy(url);
+            return response;
+        }
+
         // --------------------------------------------------- -------------------------- ---------------------------------------------------
+
+        // tentative de trouver toutes les villes entre deux points -> pour les trajets entre villes différentes
+        // on regarde le contrat de chaque ville pour voir si on peut passer par une station
+
+        // ne fonctionne pas encore 
+        // la liste des villes entre les deux points ne semblent pas fonctionner
+        public List<string> FindAllCities(string start, string end)
+        {
+            Position startPosition = CallAddressToPosition(start);
+            Position endPosition = CallAddressToPosition(end);
+            string steps = CallSteps(startPosition, endPosition);
+
+            JObject jsonObject = JObject.Parse(steps); 
+            // Liste pour stocker les positions
+            List<Position> positionList = new List<Position>(); 
+            // Parcourir chaque étape pour extraire les coordonnées et les ajouter à la liste de positions
+            foreach (var route in jsonObject["routes"]) { 
+                foreach (var leg in route["legs"]) { 
+                    foreach (var step in leg["steps"]) { 
+                        var location = step["maneuver"]["location"]; 
+                        Position pos = new Position { 
+                            lng = (double)location[0], // Longitude
+                            lat = (double)location[1] // Latitude
+                        }; 
+                        positionList.Add(pos); 
+                    } 
+                } 
+            } // Afficher les positions extraites
+            Console.WriteLine("Positions: ");
+            for(int i = 0; i < positionList.Count; i++)
+            {
+                Console.WriteLine(positionList[i].ToString());
+            }
+
+            List<string> cities = new List<string>();
+            foreach (var pos in positionList) {
+                jsonObject = JObject.Parse(CallGPStoAddress(pos));
+                Console.WriteLine(jsonObject);
+                if (jsonObject["features"].HasValues) {
+                    string city = (string)jsonObject["features"]["properties"]["city"];
+                    if (!cities.Contains(city))
+                    {
+                        cities.Add(city);
+                        Console.WriteLine(city);
+                    }
+                }
+            }
+            Console.WriteLine("Cities: ");
+            foreach (var city in cities)
+            {
+                Console.WriteLine(city);
+            }
+            return null;
+        }
     }
 }
