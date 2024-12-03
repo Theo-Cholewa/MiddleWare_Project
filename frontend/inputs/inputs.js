@@ -109,16 +109,34 @@ function GenerateSideInstructions(steps) {
             const data = steps[i].split('+');
             const dataDistance = data[4];
             const modifier = data[1];
+            const type = data[0];
             let img_data = "";
-            if (modifier == "end of road") {
+            if (type == "sharp left") {
+                img_data += "sharp_left" + '_';
+            } else if (type == "sharp right") {
+                img_data += "sharp_right" + '_';
+            } else if (type == "slight left") {
+                img_data += "slight_left" + '_';
+            } else if (type == "slight right") {
+                img_data += "slight_right" + '_';
+            } else if (type == "uturn") {
+                img_data += "uturn" + '_';
+            }
+            if (modifier == "end of road" || modifier == "new name") {
                 img_data += "end_of_road" + '_';
             } else if (modifier == "arrive" && i != steps.length-2) {
                 img_data += "velo" + '_'
+            } else if (modifier.includes("rotary") || modifier.includes("roundabout")) {
+                img_data += "roundabout" + '_';
+            } else if (modifier == "continue") {
+                img_data += "turn" + '_';
             } else {
                 img_data += data[1] + '_';
             }
-            if (modifier != "depart" && modifier != "arrive" && modifier != "end of road") {
-                img_data += data[0];
+            if (modifier != "depart" && modifier != "arrive" && modifier != "end of road" && !modifier.includes("roundabout") && !modifier.includes("rotary")) {
+                if (type != "uturn" && type != "sharp left" && type != "sharp right" && type != "slight left" && type != "slight right") {
+                    img_data += data[0];
+                }
             }
             img_data += ".png";
 

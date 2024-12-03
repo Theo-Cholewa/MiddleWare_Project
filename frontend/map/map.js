@@ -99,7 +99,7 @@ function getRoute(coords, col) {
 
 function clearMap() {
   map.eachLayer(function(layer) {
-    if (layer instanceof L.Polyline) {
+    if (layer instanceof L.Polyline ||layer instanceof L.Marker) {
       map.removeLayer(layer);
     }
   });
