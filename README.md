@@ -38,7 +38,7 @@ A service that allows users to locate, pick up, drop off bicycles at partner sta
 
 - **Enter two addresses** : departure &rarr; destination </br>
     - &rarr; By clicking the map </br>
-    - &rarr; By typing it
+    - &rarr; By typing it (take care to have the name of the city)
 
 - The walking route will be displayed in **blue**, and the cycling route will be displayed in **red**.
 
